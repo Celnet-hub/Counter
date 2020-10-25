@@ -16,6 +16,8 @@ buttons.forEach((btn) => {
     } else if (action.contains("increase")) {
       counter++;
     } else {
+        alert(`Counter will reset to Zero.
+Are you sure?`);
       counter = 0;
     }
       value.textContent = counter;
