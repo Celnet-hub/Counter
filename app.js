@@ -18,6 +18,13 @@ buttons.forEach((btn) => {
     } else {
       counter = 0;
     }
-    value.textContent = counter;
+      value.textContent = counter;
+      if (counter < 0) {
+        value.style.color = "red";
+      } else if (counter > 0) {
+          value.style.color = "green";
+      } else {
+          value.style.color = 'var(--clr-grey-1)';
+      }
   });
 });
